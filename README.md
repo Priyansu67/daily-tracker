@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Daily Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Plan and track tasks by **month**, **week**, and **day**. Organize your roadmap, log progress, and import or export CSV—all in the browser with data stored locally.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Roadmap view** — Months and weeks with day-based task lists (MON–SUN)
+- **Task management** — Add and edit tasks with title, duration, details, URL, phase, tags, and milestone flag
+- **Progress** — Check off tasks; progress is shown per day, week, and month
+- **Week settings** — Set hours per day type (WFH, Office, Weekend) and map weekdays to day types
+- **CSV import** — Import a checklist CSV (Notion-export style) as a new roadmap or merge progress only
+- **CSV export** — Export your roadmap and completion state to a CSV file for backup or reuse
+- **Start fresh** — Replace the roadmap with an empty one (progress/checked state is kept)
+- **Dark / light theme** — Toggle with persistence
+- **Responsive** — Usable on desktop and mobile; only the main content area scrolls on large screens
 
-## React Compiler
+Data is stored in the browser (IndexedDB). No server or account required.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+- **React 19** + **TypeScript**
+- **Vite**
+- **react-icons** (io5)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (v18+)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Install
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Run locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+Output is in `dist/`. Serve that folder with any static host.
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Project structure
+
+- `src/App.tsx` — Main app and UI
+- `src/types.ts` — Roadmap types and seed/helpers
+- `src/db.ts` — IndexedDB (roadmap, checked state, settings)
+- `src/csv.ts` — CSV parse (import) and build (export)
+- `src/time.ts` — Duration parsing and formatting
+- `src/index.css` — Styles and responsive layout
+
+## License
+
+Private. See repository settings for terms.
