@@ -45,9 +45,9 @@
 }
 
 body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
   font-family: 'Courier New', Courier, monospace;
   color: var(--text-primary);
   background: var(--app-bg);
@@ -125,13 +125,13 @@ html, body {
   color: var(--text-secondary);
 }
 .empty-state-title {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   margin: 0 0 8px;
   color: var(--text);
 }
 .empty-state-hint {
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin: 0;
   color: var(--text-dim);
 }
@@ -150,13 +150,13 @@ html, body {
 }
 .header-title {
   font-family: 'Space Mono', monospace;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.1em;
 }
 .header-subtitle {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-dim);
   letter-spacing: 0.05em;
 }
@@ -175,7 +175,7 @@ html, body {
   z-index: -1;
 }
 .import-csv-btn {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 6px 10px;
   border: 1px solid #333;
@@ -201,7 +201,7 @@ html, body {
   flex-shrink: 0;
 }
 .reset-roadmap-btn {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 6px 10px;
   border: 1px solid #333;
@@ -221,7 +221,7 @@ html, body {
   background: rgba(180, 60, 60, 0.15);
   border: 1px solid rgba(180, 60, 60, 0.4);
   border-radius: 2px;
-  font-size: 11px;
+  font-size: 13px;
   color: #e88;
   display: flex;
   align-items: center;
@@ -229,7 +229,7 @@ html, body {
   gap: 8px;
 }
 .import-error-dismiss {
-  font-size: 10px;
+  font-size: 12px;
   padding: 2px 8px;
   border: 1px solid rgba(180, 60, 60, 0.4);
   background: transparent;
@@ -245,7 +245,7 @@ html, body {
   border-radius: 2px;
 }
 .import-preview-text {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-muted);
   margin: 0 0 8px;
 }
@@ -255,7 +255,7 @@ html, body {
   flex-wrap: wrap;
 }
 .import-preview-btn {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 6px 10px;
   border: 1px solid #333;
@@ -294,7 +294,7 @@ html, body {
 .month-tab {
   cursor: pointer;
   padding: 10px 18px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Space Mono', monospace;
   border: 1px solid var(--border-subtle);
   background: var(--surface-panel);
@@ -328,18 +328,18 @@ html, body {
   margin-bottom: 6px;
 }
 .month-progress-label {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-secondary);
   letter-spacing: 0.04em;
   font-weight: 500;
 }
 .month-progress-pct {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--accent);
   letter-spacing: 0.05em;
 }
 .month-progress .month-progress-pct {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--accent);
   letter-spacing: 0.04em;
@@ -382,7 +382,7 @@ html, body {
   flex-shrink: 0;
 }
 .sidebar-label {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--text-muted);
   letter-spacing: 0.1em;
@@ -397,7 +397,7 @@ html, body {
 .week-btn {
   cursor: pointer;
   padding: 8px 12px;
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   border: 1px solid transparent;
   border-left: 3px solid transparent;
@@ -436,12 +436,12 @@ html, body {
   gap: 2px;
 }
 .sidebar-week-total-label {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--text-dim);
   letter-spacing: 0.06em;
 }
 .sidebar-week-total-value {
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
   color: var(--accent);
@@ -454,21 +454,21 @@ html, body {
   border-radius: 4px;
 }
 .week-theme-label {
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   color: var(--text-dim);
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 .week-theme-text {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-secondary);
   line-height: 1.4;
 }
 .sidebar-settings-btn {
   margin-top: auto;
   padding: 10px 12px;
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   font-weight: 500;
   color: var(--text-muted);
@@ -504,7 +504,7 @@ html, body {
 .day-tab {
   cursor: pointer;
   padding: 10px 8px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   border-bottom: 2px solid transparent;
   background: transparent;
@@ -527,12 +527,12 @@ html, body {
   font-weight: 700;
 }
 .day-tab-inner {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 .day-tab-pct {
-  font-size: 8px;
+  font-size: 10px;
   margin-top: 1px;
 }
 .day-tab-pct.active {
@@ -558,7 +558,7 @@ html, body {
   gap: 10px;
 }
 .day-badge {
-  font-size: 9px;
+  font-size: 11px;
   padding: 2px 8px;
   border-radius: 1px;
   letter-spacing: 0.08em;
@@ -568,7 +568,7 @@ html, body {
   color: var(--day-badge);
 }
 .day-hours {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-dim);
 }
 .day-header-right {
@@ -577,11 +577,11 @@ html, body {
   gap: 8px;
 }
 .day-stats {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--text-dim);
 }
 .day-total-time {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
   color: var(--day-badge);
@@ -659,7 +659,7 @@ html, body {
   border-color: transparent;
 }
 .task-card__title {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
   font-family: 'Space Mono', monospace;
@@ -668,7 +668,7 @@ html, body {
   word-break: break-word;
 }
 .task-card__duration {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 4px 8px;
   background: rgba(255, 255, 255, 0.04);
@@ -686,7 +686,7 @@ html, body {
   margin-bottom: 10px;
 }
 .task-card__badge {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 3px 8px;
   border-radius: 4px;
@@ -714,7 +714,7 @@ html, body {
 }
 
 .task-card__detail {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.55;
   color: var(--text-muted);
   margin: 0 0 10px;
@@ -735,7 +735,7 @@ html, body {
   min-width: 0;
 }
 .task-card__link {
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   color: var(--task-accent);
   text-decoration: none;
@@ -749,7 +749,7 @@ html, body {
   color: var(--text-primary);
 }
 .task-card__ref-label {
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   color: var(--text-muted);
 }
@@ -759,7 +759,7 @@ html, body {
   flex-shrink: 0;
 }
 .task-card__btn {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 5px 10px;
   background: transparent;
@@ -782,7 +782,7 @@ html, body {
 
 /* Add task button */
 .add-task-btn {
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Space Mono', monospace;
   padding: 6px 10px;
   border: 1px solid var(--accent);
@@ -829,7 +829,7 @@ html, body {
   overflow-y: auto;
 }
 .settings-dialog-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   font-family: 'Space Mono', monospace;
   color: var(--text-primary);
@@ -849,7 +849,7 @@ html, body {
   border-top: 1px solid var(--border-subtle);
 }
 .settings-day-types-hint {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-secondary);
   margin: 0 0 4px;
 }
@@ -861,12 +861,12 @@ html, body {
 }
 .settings-day-type-label {
   font-family: 'Space Mono', monospace;
-  font-size: 12px;
+  font-size: 14px;
   min-width: 32px;
   color: var(--text-primary);
 }
 .settings-day-type-btn {
-  font-size: 11px;
+  font-size: 13px;
   padding: 4px 10px;
   border-radius: 4px;
   border: 1px solid var(--border-subtle);
@@ -899,7 +899,7 @@ html, body {
   gap: 12px;
 }
 .add-task-dialog-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   font-family: 'Space Mono', monospace;
   color: var(--text-primary);
@@ -919,7 +919,7 @@ html, body {
   background: var(--app-bg);
   border: 1px solid var(--border-subtle);
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-primary);
 }
 .add-task-readonly-row {
@@ -948,7 +948,7 @@ html, body {
   margin-top: 4px;
 }
 .add-task-badge-option {
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   padding: 6px 14px;
   background: var(--app-bg);
@@ -973,12 +973,12 @@ html, body {
   gap: 4px;
 }
 .add-task-label {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
 .add-task-input {
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Space Mono', monospace;
   padding: 8px 10px;
   background: var(--app-bg);
@@ -1003,7 +1003,7 @@ html, body {
   margin-top: 8px;
 }
 .add-task-submit {
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   padding: 8px 14px;
   background: var(--accent);
@@ -1017,7 +1017,7 @@ html, body {
   opacity: 0.9;
 }
 .add-task-cancel {
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Space Mono', monospace;
   padding: 8px 14px;
   background: transparent;
@@ -1056,11 +1056,11 @@ html, body {
     flex-wrap: wrap;
   }
   .header-title {
-    font-size: 13px;
+    font-size: 15px;
     flex: 0 0 auto;
   }
   .header-subtitle {
-    font-size: 11px;
+    font-size: 13px;
   }
   .header-actions {
     margin-left: auto;
@@ -1080,7 +1080,7 @@ html, body {
   .reset-roadmap-btn {
     min-height: 36px;
     padding: 6px 10px;
-    font-size: 10px;
+    font-size: 12px;
     flex: 0 0 auto;
     white-space: nowrap;
   }
@@ -1096,13 +1096,13 @@ html, body {
   .month-tab {
     flex: 0 0 auto;
     padding: 8px 12px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .month-progress {
     margin-top: 8px;
   }
   .month-progress-label {
-    font-size: 10px;
+    font-size: 12px;
   }
   .sidebar {
     width: 100%;
@@ -1118,7 +1118,7 @@ html, body {
   .sidebar-label {
     width: 100%;
     margin-bottom: 0;
-    font-size: 9px;
+    font-size: 11px;
   }
   .sidebar-settings-btn {
     display: none;
@@ -1130,7 +1130,7 @@ html, body {
   }
   .week-btn {
     padding: 8px 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .sidebar-progress {
     margin-left: 0;
@@ -1159,10 +1159,10 @@ html, body {
     flex: 0 0 auto;
     min-width: 44px;
     padding: 10px 8px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .day-tab-inner {
-    font-size: 10px;
+    font-size: 12px;
   }
   .day-header {
     padding: 10px 12px;
@@ -1181,7 +1181,7 @@ html, body {
   }
   .day-stats,
   .day-total-time {
-    font-size: 9px;
+    font-size: 11px;
   }
   .task-list {
     padding: 8px 12px 20px;
@@ -1237,18 +1237,18 @@ html, body {
 
 @media (max-width: 480px) {
   .header-title {
-    font-size: 12px;
+    font-size: 14px;
   }
   .import-csv-btn,
   .theme-toggle-btn,
   .reset-roadmap-btn,
   .header-settings-btn {
     padding: 6px 8px;
-    font-size: 9px;
+    font-size: 11px;
   }
   .month-tab {
     padding: 6px 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .sidebar {
     max-height: 160px;
@@ -1266,6 +1266,6 @@ html, body {
     justify-content: flex-start;
   }
   .task-card__title {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

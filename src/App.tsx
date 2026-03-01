@@ -164,7 +164,7 @@ export default function App() {
       } catch {
         // continue with defaults
       } finally {
-        setLoaded(true);
+      setLoaded(true);
       }
     };
     load();
@@ -932,7 +932,7 @@ export default function App() {
             <button type="button" className="import-error-dismiss icon-btn" onClick={() => setImportError(null)} title="Dismiss" aria-label="Dismiss">
               <IoClose size={16} />
             </button>
-          </div>
+        </div>
         )}
 
         {importPreview && (
@@ -941,14 +941,14 @@ export default function App() {
               {importPreview.taskCount} tasks, {importPreview.completedCount} completed
             </p>
             <div className="import-preview-actions">
-              <button type="button" className="import-preview-btn primary icon-btn" onClick={applyImportAsRoadmap} title="Use as my roadmap" aria-label="Use as my roadmap">
-                <AiOutlineImport size={18} />
+              <button type="button" className="import-preview-btn primary" onClick={applyImportAsRoadmap} title="Use as my roadmap">
+                Use as my roadmap
               </button>
-              <button type="button" className="import-preview-btn icon-btn" onClick={applyImportProgressOnly} title="Import progress only" aria-label="Import progress only">
-                <IoRefreshOutline size={18} />
+              <button type="button" className="import-preview-btn" onClick={applyImportProgressOnly} title="Import progress only">
+                Import progress only
               </button>
-              <button type="button" className="import-preview-btn icon-btn" onClick={() => setImportPreview(null)} title="Cancel" aria-label="Cancel">
-                <IoClose size={18} />
+              <button type="button" className="import-preview-btn" onClick={() => setImportPreview(null)} title="Cancel">
+                Cancel
               </button>
             </div>
           </div>
@@ -968,9 +968,9 @@ export default function App() {
                 }
                 onClick={() => setActiveMonthAndPersist(i)}
               >
-                {m.label}
-              </button>
-            ))}
+              {m.label}
+            </button>
+          ))}
           </div>
         </div>
 
@@ -1040,7 +1040,7 @@ export default function App() {
                   )
                 )}
               </span>
-            </div>
+        </div>
           )}
 
           <button
@@ -1128,9 +1128,9 @@ export default function App() {
             {[...day.tasks]
               .sort((a, b) => (b.isMilestone ? 1 : 0) - (a.isMilestone ? 1 : 0))
               .map((task: RoadmapTask) => {
-                const isDone = !!checked[task.id];
+              const isDone = !!checked[task.id];
                 const hasBadges = task.tag || task.taskType || task.phase || task.isMilestone;
-                return (
+              return (
                   <article
                     key={task.id}
                     className={`task-card${isDone ? ' task-card--done' : ''}`}
@@ -1167,9 +1167,9 @@ export default function App() {
                               />
                             </svg>
                           )}
-                        </div>
+                  </div>
                         <h3 className="task-card__title">{task.text}</h3>
-                      </div>
+                    </div>
                       <span
                         className="task-card__duration"
                         title="Duration (minutes)"
@@ -1203,7 +1203,7 @@ export default function App() {
 
                     <footer className="task-card__footer">
                       <div className="task-card__ref">
-                        {task.url ? (
+                    {task.url ? (
                           <a
                             href={task.url}
                             target="_blank"
@@ -1217,8 +1217,8 @@ export default function App() {
                           <span className="task-card__ref-label">
                             {task.ref ? `📌 ${task.ref}` : '—'}
                           </span>
-                        )}
-                      </div>
+                    )}
+                  </div>
                       <div className="task-card__actions">
                         <button
                           type="button"
@@ -1244,14 +1244,14 @@ export default function App() {
                         >
                           <IoTrashOutline size={16} />
                         </button>
-                      </div>
+                </div>
                     </footer>
                   </article>
-                );
-              })}
+              );
+            })}
           </div>
         </main>
-      </div>
+        </div>
 
       {addTaskOpen && (
         <div
@@ -1290,7 +1290,7 @@ export default function App() {
                     <div className="add-task-readonly-row"><strong>Week:</strong> {weekNum}</div>
                     <div className="add-task-readonly-row"><strong>Day:</strong> {dayAbbr}</div>
                     <div className="add-task-readonly-row"><strong>Day type:</strong> {dayTypeLabel}</div>
-                  </div>
+      </div>
                 );
               })()}
               <div className="add-task-form-row">
