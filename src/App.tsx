@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import {
   DAY_COLORS,
   DAY_ORDER,
-  createSeedRoadmap,
   ensureMonthWeekDayForDate,
   getDayAbbrFromDate,
   getDayTypeFromDate,
@@ -157,9 +156,8 @@ export default function App() {
         const resolvedSettings = savedSettings ?? DEFAULT_WEEK_SETTINGS;
         setWeekSettings(resolvedSettings);
         if (!customRoadmap || !Array.isArray(customRoadmap) || customRoadmap.length === 0) {
-          const seed = createSeedRoadmap(resolvedSettings.weekdayDayType);
-          setRoadmap(seed);
-          await db.setCustomRoadmap(seed);
+          setRoadmap([]);
+          await db.setCustomRoadmap([]);
         } else {
           setRoadmap(customRoadmap as RoadmapMonth[]);
         }
