@@ -327,7 +327,7 @@ export function buildRoadmapCsv(
           const minutes = parseTimeToMinutes(t.time) || 0;
           const duration = minutes ? `${minutes}m` : '0m';
           const dayName = DAY_ABBR_TO_NAME[day.day] ?? day.day;
-          const status = checked[t.id] ? 'Done' : '';
+          const status = checked[t.id] ? 'Done' : 'Not Started';
           const isMilestone = t.isMilestone ? 'Yes' : 'No';
           rows.push([
             t.text,
